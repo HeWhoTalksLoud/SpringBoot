@@ -52,6 +52,10 @@ public class RestControllerNew {
 
         employeeService.deleteEmployee(id);
         return "Employee with id = " + id + " was deleted";
+    }
 
+    @GetMapping("/employees/name/{name}")
+    public List<Employee> getEmployeesByName(@PathVariable String name) {
+        return employeeService.GetEmployeesByName(name);
     }
 } //

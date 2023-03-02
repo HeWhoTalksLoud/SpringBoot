@@ -15,7 +15,7 @@ public class Employee {
     @Column(name = "id")
     private Integer id;
     @Column(name = "first_name")
-    private String first_name;
+    private String firstName;
     @Column(name = "department")
     private Integer department;
     @Column(name = "salary")
@@ -26,7 +26,7 @@ public class Employee {
 
     public Employee(int id, String first_name, int department, float salary) {
         this.id = id;
-        this.first_name = first_name;
+        this.firstName = first_name;
         this.department = department;
         this.salary = salary;
     }
@@ -40,11 +40,11 @@ public class Employee {
     }
 
     public String getFirst_name() {
-        return first_name;
+        return firstName;
     }
 
     public void setFirst_name(String first_name) {
-        this.first_name = first_name;
+        this.firstName = first_name;
     }
 
     public Integer getDepartment() {
