@@ -2,9 +2,11 @@ package com.example.springboot.dao;
 
 import com.example.springboot.entity.Employee;
 import jakarta.persistence.*;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+@Repository
 public class EmployeeDAOImpl implements EmployeeDAO {
 
     private EntityManager entityManager;
@@ -40,4 +42,4 @@ public class EmployeeDAOImpl implements EmployeeDAO {
         query.setParameter("id", id);
         query.executeUpdate();
     }
-}
+} //
